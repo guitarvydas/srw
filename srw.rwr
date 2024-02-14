@@ -1,0 +1,13 @@
+srw {
+  chars [char+] = ‛«char»’
+  char [x] = ‛«x»’
+
+  Macro [_1 _2 _3 _4 _5 _6 namestr _7 _8 _9 procname _10 _11] = ‛\nzd.append_leaf (leaves, zd.Leaf_Template { name = «namestr», instantiate = «procname»})’
+  namestr [x] = ‛«x»’
+  string [_dql notDQ* _dqr] = ‛«_dql»«notDQ»«_dqr»’
+  notDQ [c] = ‛«c»’
+  dq [c] = ‛«c»’
+  procname [firstLetter moreNameLetter*] = ‛«firstLetter»«moreNameLetter»’
+  firstLetter [c] = ‛«c»’
+  moreNameLetter [c] = ‛«c»’
+}
